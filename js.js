@@ -26,14 +26,14 @@ function them() {
     align-items: center;
 
     `
-    if (dai!=""&& rong!="") {
-            csslable2+=`
+    if (dai != "" && rong != "") {
+        csslable2 += `
             width: ${dai}mm;
             height: ${rong}mm; `
     }
     let ma = document.querySelector(".ma").value
     let kichthuoc = document.querySelector(".kichthuoc").value
-    if(loai!=4){
+    if (loai != 4) {
         for (i = 0; i < Number(soluong); i++) {
             content += `
             <div style="${csslable2}" onclick="xoa(${i})" class="${cssloai} tem">
@@ -42,21 +42,21 @@ function them() {
              </div>`
         }
     }
-    else{
+    else {
         document.querySelector(".khungin").classList.add("center")
-        let datelable=new Date()
-        let stringdate =`${datelable.getDate()-2}/${datelable.getMonth()+1}/${datelable.getFullYear()}`
+        let datelable = new Date()
+        let stringdate = `${datelable.getDate() - 2}/${datelable.getMonth() + 1}/${datelable.getFullYear()}`
         console.log(datelable)
-        for(i=0; i<Number(soluong);i++){
-            content+=`  <div style=" margin-top:3px;border: 2px solid black; padding: 8px;" class="temt37">
-            <table style="width: 126mm; ">
+        for (i = 0; i < Number(soluong); i++) {
+            content += `  <div style=" margin-top:3px;border: 2px solid black; padding: 8px;" class="temt37">
+            <table style="width: 115mm; ">
                 <tr style="text-align: center">
                     <td colspan="4"> <img style="width: 85mm; height: 13.5mm;"
                             src="./Screenshot_2023-02-14_155916-removebg-preview.png" alt=""></td>
                 </tr>
                 <tr style="text-align: center;">
                     <td colspan="4">
-                        <p>Thông số kĩ thuật: <b><u>T37-400x55 SA30 TB2</b=u></p>
+                        <p>Thông số kĩ thuật: <b><u>T37-400x55 SA30 TB2</b><u></p>
                     </td>
                 </tr>
                 <tr style="margin-top:2px">
@@ -84,12 +84,12 @@ function them() {
 }
 function check() {
     document.querySelector(".container").classList.add("up")
-    document.querySelector(".sign").style.opacity="1"
+    document.querySelector(".sign").style.opacity = "1"
     window.print()
 }
 function out() {
     document.querySelector(".container").classList.remove("up")
-    document.querySelector(".sign").style.opacity="0"
+    document.querySelector(".sign").style.opacity = "0"
 
 }
 function xoa(i) {
@@ -126,28 +126,28 @@ function view() {
     justify-content: center;
     align-items: center;
     `
-    if (dai!=""&& rong!="") {
-            csslable2+=`
+    if (dai != "" && rong != "") {
+        csslable2 += `
             width: ${dai}mm;
             height: ${rong}mm; `
     }
-    let content="";
-    if(loai!=4){
-        
-    let ma = document.querySelector(".ma").value
-    let kichthuoc = document.querySelector(".kichthuoc").value
-    content = ` 
+    let content = "";
+    if (loai != 4) {
+
+        let ma = document.querySelector(".ma").value
+        let kichthuoc = document.querySelector(".kichthuoc").value
+        content = ` 
     <div style="${csslable2}" class="${cssloai} tem">
      <h3>${kichthuoc}</h3>
      <p>${ma}</p>
     </div>`
     }
-    else{
+    else {
         document.querySelector(".khungin").classList.add("center")
-        let datelable=new Date()
-        let stringdate =`${datelable.getDate()-2}/${datelable.getMonth()+1}/${datelable.getFullYear()}`
+        let datelable = new Date()
+        let stringdate = `${datelable.getDate() - 2}/${datelable.getMonth() + 1}/${datelable.getFullYear()}`
         console.log(datelable)
-        content+=`  <div style="transform: scale(0.9); margin-top:3px; margin-left:-18px;border: 2px solid black; padding: 8px;" class="temt37">
+        content += `  <div style="transform: scale(0.9); margin-top:3px; margin-left:-18px;border: 2px solid black; padding: 8px;" class="temt37">
         <table  style="width: 105mm ">
             <tr style="text-align: center">
                 <td colspan="4"> <img style="width: 85mm; height: 13.5mm;"
@@ -181,19 +181,19 @@ function view() {
     document.querySelector(".viewLable").innerHTML = content
 }
 
-function changeValue(){
+function changeValue() {
     let loai = document.querySelector("#sellect").value;
     if (loai == "1") {
-        document.querySelector("#dai").value='32'
-        document.querySelector("#rong").value='12'
+        document.querySelector("#dai").value = '32'
+        document.querySelector("#rong").value = '12'
     }
     else if (loai == "2") {
-        document.querySelector("#dai").value='28'
-        document.querySelector("#rong").value='10'
+        document.querySelector("#dai").value = '28'
+        document.querySelector("#rong").value = '10'
     }
     else if (loai == "3") {
-        document.querySelector("#dai").value='24'
-        document.querySelector("#rong").value='9.5'
+        document.querySelector("#dai").value = '24'
+        document.querySelector("#rong").value = '9.5'
     }
-   
+
 }
