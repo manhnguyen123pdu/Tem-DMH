@@ -1,33 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.tong{
-    
+
+.tong {
+
     display: flex;
     width: 100%;
     position: relative;
 }
-.khungin{
-    
+
+.khungin {
+
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     padding: 20px;
     width: 210mm;
-    height: 260mm;
-    border: 3px solid black;
+    height: 265mm;
+    border: 2px solid black;
     background-color: rgb(255, 255, 255);
 }
-.center{
-   justify-content: center;
+
+.center {
+    justify-content: center;
 }
-.right{
+
+.right {
     flex: 1;
     margin: 0 40px;
 }
 
-.up{
+.up {
     z-index: 1000;
     width: 100%;
     position: absolute;
@@ -36,61 +40,84 @@
     justify-content: center;
 }
 
-/* .labletem{
-    text-align: center;
-    border: 1px dashed black;
-    background-color: white;
-} */
-.temt37{
+
+.temt37 {
     font-size: 16px;
 }
+
 .tem {
     color: rgb(21, 21, 241);
 }
-.loai300{
+
+.loai300 {
     text-align: center;
     width: 32mm;
     height: 12mm;
-    border: 1px dashed black;
+    border: 1px dotted black;
     background-color: white;
 }
-.loai250{
+
+.loai300 h3 {
+    font-size: 15px;
+}
+
+.loai300 p {
+    margin-top: 3px;
+    font-size: 11px;
+}
+
+.loai250 {
     text-align: center;
     width: 28mm;
     height: 10mm;
+    padding-left: 2px;
+    padding-right: 2px;
     border: 1px dashed black;
     background-color: white;
 }
-.loai250 h3{
-font-size: 15px;
+
+.loai250 h3 {
+    font-size: 12px;
 }
-.loai250 p{
-    font-size: 14px;
+
+.loai250 p {
+    margin-top: 3px;
+    font-size: 10px;
 }
-.loai200{
+
+.loai200 {
     text-align: center;
-    width: 23.5mm;
+    width: 24mm;
     height: 9.5mm;
+    padding-left: 2px;
+    padding-right: 2px;
     border: 1px dashed black;
     background-color: white;
 }
-.loai200 h3{
-    font-size: 15px;
-    }
-.loai200 p{
-    font-size: 11.5px;
+
+.loai200 h3 {
+    font-size: 11px;
 }
-label{
+
+.loai200 p {
+    margin-top: 4px;
+    font-size: 8.5px;
+
+}
+
+label {
     display: block;
     padding-top: 10px;
 
 }
-.control{
+
+.control {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
-.btn{
+
+.btn {
     padding: 10px 15px;
     border-radius: 5px;
     border: 0;
@@ -98,29 +125,37 @@ label{
     color: white;
 
 }
-.btn1{
+
+.btn1 {
     background-color: rgb(27, 83, 238);
 }
-.btn2{
+
+.btn2 {
     background-color: rgb(238, 27, 27);
 }
-.btn3{
+
+.btn3 {
     background-color: rgb(238, 189, 27);
 }
-.btn4{
+
+.btn4 {
     background-color: rgb(0, 0, 0);
 }
-input{
+
+input {
     padding: 8px 8px;
     width: 85%;
 }
-.right h1{
+
+.right h1 {
     text-align: center;
 }
-select{
+
+select {
     padding: 8px 8px;
     width: 90%;
 }
-.viewLable{
-margin-top: 50px;
+
+.viewLable {
+    margin-top: 50px;
 }

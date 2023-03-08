@@ -20,7 +20,7 @@
             <img style="width: 250px; display: block; margin: auto;" src="./Screenshot_2023-02-14_155916-removebg-preview.png" alt="">
             <h1>CREATE LABEL</h1>
             <p style="margin-top: 8px;margin-bottom: 8px; font-weight: bolder;"> Select</p>
-            <select name="" id="sellect">
+            <select onchange="changeValue()" name="" id="sellect">
                 <option>---Select---</option>
                 <option value="1">300</option>
                 <option value="2">250</option>
@@ -31,11 +31,11 @@
             <div style="display: flex;width: 92%;" class="div">
                 <label for="">
                     <p>Chiều dài</p>
-                    <input placeholder="Nhập chiều dài" class="dai" type="text">
+                    <input id="dai" placeholder="Nhập chiều dài" class="dai" type="text">
                 </label>
                 <label for="">
                     <p>Chiều rộng </p>
-                    <input  placeholder="Nhập chiều rộng" class="rong " type="text">
+                    <input id="rong" placeholder="Nhập chiều rộng" class="rong " type="text">
                 </label>
             </div>
             <br>

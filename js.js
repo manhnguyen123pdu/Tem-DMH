@@ -180,3 +180,20 @@ function view() {
     }
     document.querySelector(".viewLable").innerHTML = content
 }
+
+function changeValue(){
+    let loai = document.querySelector("#sellect").value;
+    if (loai == "1") {
+        document.querySelector("#dai").value='32'
+        document.querySelector("#rong").value='12'
+    }
+    else if (loai == "2") {
+        document.querySelector("#dai").value='28'
+        document.querySelector("#rong").value='10'
+    }
+    else if (loai == "3") {
+        document.querySelector("#dai").value='24'
+        document.querySelector("#rong").value='9.5'
+    }
+   
+}
