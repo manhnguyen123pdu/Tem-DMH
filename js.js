@@ -4,6 +4,7 @@ function them() {
     let soluong = document.querySelector(".soluong").value;
     let loai = document.querySelector("#sellect").value;
     let cssloai = ""
+    console.log(loai)
     if (loai == "1") {
         cssloai = "loai300"
     }
@@ -12,6 +13,9 @@ function them() {
     }
     else if (loai == "3") {
         cssloai = "loai200"
+    }
+    else if (loai == "5") {
+        cssloai = "loai150"
     }
     let dai = Number(document.querySelector(".dai").value);
     let rong = Number(document.querySelector(".rong").value);
@@ -114,6 +118,9 @@ function view() {
     else if (loai == "3") {
         cssloai = "loai200"
     }
+    else if (loai == "5") {
+        cssloai = "loai150"
+    }
     let dai = Number(document.querySelector(".dai").value);
     let rong = Number(document.querySelector(".rong").value);
 
@@ -194,6 +201,10 @@ function changeValue() {
     else if (loai == "3") {
         document.querySelector("#dai").value = '24'
         document.querySelector("#rong").value = '9.5'
+    }
+    else if (loai == "5") {
+        document.querySelector("#dai").value = '15'
+        document.querySelector("#rong").value = '6'
     }
 
 }
